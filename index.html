@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zaid Almani, E.I. | Civil Engineer</title>
+<meta name="description" content="Zaid Almani, E.I. Civil engineer in Columbus, Ohio, working in site civil design, stormwater, transportation and construction. M.S. Civil Engineering, University of Dayton.">
+<meta property="og:title" content="Zaid Almani, E.I. | Civil Engineer">
+<meta property="og:description" content="Site civil design, stormwater and transportation engineering. Columbus, OH.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a drawing sheet. Contour-map hero, sections read like sheets in a plan set, title block footer */
+:root{
+  --paper:#f5f6f2; --sheet:#ffffff; --ink:#16263a; --ink-2:#4a5a6c; --rule:#d6dbd9;
+  --accent:#c2551f; --accent-soft:#f6e6dc; --contour:#c9d3d6;
+  --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f1722; --sheet:#152030; --ink:#e7ecf1; --ink-2:#9fb0c2; --rule:#26354a;
+  --accent:#f0874f; --accent-soft:#3a2418; --contour:#22324a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f1722; --sheet:#152030; --ink:#e7ecf1; --ink-2:#9fb0c2; --rule:#26354a;
+  --accent:#f0874f; --accent-soft:#3a2418; --contour:#22324a; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.gutter{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.container{max-width:1100px;margin:0 auto}
+
+/* nav */
+.topbar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.topbar .container{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.04em;text-decoration:none;color:var(--ink)}
+.brand span{color:var(--accent)}
+.topbar nav{display:flex;gap:20px;flex-wrap:wrap;font-family:var(--mono);font-size:13px}
+.topbar nav a{color:var(--ink-2);text-decoration:none}
+.topbar nav a:hover{color:var(--accent)}
+@media (max-width:720px){.topbar nav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule)}
+#contours{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero .container{position:relative;padding-block:72px 64px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;align-items:end}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(48px,9vw,96px);line-height:.95;margin:0;letter-spacing:.01em}
+h1 .pe{color:var(--accent)}
+.lede{font-size:clamp(18px,2.2vw,21px);max-width:38ch;margin:20px 0 28px;color:var(--ink)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:.04em;text-transform:uppercase;padding:10px 20px;border:2px solid var(--ink);color:var(--ink);text-decoration:none;background:var(--sheet)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{transform:translateY(-1px)}
+.stamp{background:var(--sheet);border:1px solid var(--rule);padding:20px 22px;font-family:var(--mono);font-size:13px;display:grid;gap:10px}
+.stamp div{display:flex;justify-content:space-between;gap:16px;border-bottom:1px dashed var(--rule);padding-bottom:8px}
+.stamp div:last-child{border-bottom:0;padding-bottom:0}
+.stamp dt{color:var(--ink-2);text-transform:uppercase;letter-spacing:.08em}
+.stamp dd{margin:0;text-align:right;font-weight:500}
+@media (max-width:820px){.hero .container{grid-template-columns:minmax(0,1fr);padding-block:48px}}
+
+/* sections */
+section{padding-block:72px;border-bottom:1px solid var(--rule)}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:32px;flex-wrap:wrap}
+.sheet-no{font-family:var(--mono);font-size:12px;color:var(--accent);border:1px solid var(--accent);padding:2px 8px;letter-spacing:.1em}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(32px,5vw,44px);line-height:1.05;margin:0;letter-spacing:.01em;text-wrap:balance}
+h3{font-family:var(--display);font-weight:600;font-size:24px;line-height:1.2;margin:0;letter-spacing:.01em}
+p{max-width:68ch}
+
+.about{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:48px}
+.about p{margin:0 0 16px}
+.facts{display:grid;gap:0;border-top:2px solid var(--ink)}
+.facts div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--rule)}
+.facts dt{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);padding-top:3px}
+.facts dd{margin:0;font-weight:600}
+@media (max-width:820px){.about{grid-template-columns:minmax(0,1fr)}}
+
+.areas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:var(--rule);border:2px solid var(--ink)}
+.area{background:var(--sheet);padding:28px}
+.area .code{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.1em}
+.area h3{margin:6px 0 10px}
+.area p{margin:0;color:var(--ink-2)}
+@media (max-width:720px){.areas{grid-template-columns:minmax(0,1fr)}}
+
+.timeline{display:grid;gap:0}
+.job{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;padding:32px 0;border-top:1px solid var(--rule)}
+.job:first-child{border-top:2px solid var(--ink)}
+.when{font-family:var(--mono);font-size:13px;color:var(--ink-2);line-height:1.5}
+.when strong{display:block;font-family:var(--display);font-size:22px;color:var(--ink);font-weight:600;letter-spacing:.02em}
+.job .org{font-weight:600;color:var(--accent);margin:2px 0 12px}
+.job ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.job li{max-width:70ch}
+@media (max-width:720px){.job{grid-template-columns:minmax(0,1fr);gap:8px}}
+
+.ptypes{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.ptype{border:1px solid var(--rule);background:var(--sheet);padding:20px;display:grid;gap:6px;align-content:start}
+.ptype .tag{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-2)}
+.ptype h3{font-size:21px}
+.ptype p{margin:0;font-size:15px;color:var(--ink-2)}
+
+.tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:24px}
+.tools h3{font-size:20px;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{font-family:var(--mono);font-size:13px;border:1px solid var(--rule);background:var(--sheet);padding:4px 10px}
+
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{border:1px solid var(--rule);background:var(--sheet);padding:24px;display:grid;gap:6px;align-content:start}
+.card .meta{font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+.card p{margin:6px 0 0;color:var(--ink-2);font-size:16px}
+.card ul{margin:6px 0 0;padding-left:20px;color:var(--ink-2);font-size:16px;display:grid;gap:4px}
+@media (max-width:720px){.edu{grid-template-columns:minmax(0,1fr)}}
+.sub{margin-top:40px}
+
+.contact{background:var(--ink);color:var(--paper);border-bottom:0}
+.contact h2{color:var(--paper)}
+.contact .sheet-no{color:var(--accent);border-color:var(--accent)}
+.contact p{color:color-mix(in srgb,var(--paper) 80%,transparent)}
+.contact .btn{background:transparent;color:var(--paper);border-color:var(--paper)}
+.contact .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.contact-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.addr{font-family:var(--mono);font-size:15px;margin-top:20px;user-select:all}
+
+/* title block footer */
+.titleblock{border-top:2px solid var(--ink);background:var(--sheet)}
+.titleblock .container{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;font-family:var(--mono);font-size:12px}
+.titleblock .container > div{padding:14px 16px;border-left:1px solid var(--rule)}
+.titleblock .container > div:first-child{border-left:0;padding-left:0}
+.titleblock span{display:block;color:var(--ink-2);text-transform:uppercase;letter-spacing:.08em;font-size:10px}
+.titleblock b{font-weight:500}
+@media (max-width:720px){.titleblock .container{grid-template-columns:1fr 1fr}.titleblock .container > div:nth-child(3){border-left:0;padding-left:0}}
+</style>
+</head>
+<body>
+
+<header class="topbar gutter">
+  <div class="container">
+    <a class="brand" href="#top">ZAID ALMANI<span>, E.I.</span></a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Software</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero gutter">
+  <canvas id="contours" aria-hidden="true"></canvas>
+  <div class="container">
+    <div>
+      <p class="eyebrow">Civil Engineer · Columbus, Ohio</p>
+      <h1>Zaid Almani<span class="pe">, E.I.</span></h1>
+      <p class="lede">I design sites, stormwater systems and roadways that meet code, get approved and can be built: from concept and calculations to plans, specifications and field checks.</p>
+      <div class="cta">
+        <a class="btn primary" href="Zaid-Almani-Resume.pdf" target="_blank" rel="noopener">View resume (PDF)</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <dl class="stamp" aria-label="At a glance">
+      <div><dt>Credential</dt><dd>Engineer Intern (E.I.)</dd></div>
+      <div><dt>Degree</dt><dd>M.S. Civil Engineering</dd></div>
+      <div><dt>School</dt><dd>University of Dayton</dd></div>
+      <div><dt>GPA</dt><dd>3.66 / 4.00</dd></div>
+      <div><dt>Current</dt><dd>Staff Consultant, CEC</dd></div>
+      <div><dt>Based in</dt><dd>Columbus, OH</dd></div>
+    </dl>
+  </div>
+</div>
+
+<section id="about" class="gutter"><div class="container">
+  <div class="sec-head"><span class="sheet-no">C-001</span><h2>About</h2></div>
+  <div class="about">
+    <div>
+      <p>I'm a civil engineer and Engineer Intern (E.I.) at Civil &amp; Environmental Consultants in Columbus, Ohio. I prepare civil site designs for commercial, industrial and residential land development, including grading, utilities, erosion and sediment control, water quality BMPs and SWPPPs, and I support permitting with regulatory agencies.</p>
+      <p>Before CEC, I worked on facility specifications, constructability reviews and bid documents with FedEx's Design Engineering Services team, and I designed and inspected highway projects with the National Highway Authority.</p>
+      <p>That mix of design, construction and owner-side experience lets me see a project the way the designer, the contractor and the owner each see it. I'm working toward my PE license.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Focus</dt><dd>Site civil · Stormwater · Transportation · Construction</dd></div>
+      <div><dt>Licensure</dt><dd>E.I., working toward PE</dd></div>
+      <div><dt>Education</dt><dd>M.S. &amp; B.E. Civil Engineering</dd></div>
+      <div><dt>Location</dt><dd>Columbus, Ohio</dd></div>
+    </dl>
+  </div>
+</div></section>
+
+<section id="expertise" class="gutter"><div class="container">
+  <div class="sec-head"><span class="sheet-no">C-100</span><h2>What I do</h2></div>
+  <div class="areas">
+    <div class="area"><div class="code">01 · SITE CIVIL</div><h3>Land development design</h3><p>Grading, site layout, street and signage plans, utility design, and construction plans with supporting calculations in AutoCAD Civil 3D.</p></div>
+    <div class="area"><div class="code">02 · STORMWATER</div><h3>Stormwater &amp; erosion control</h3><p>Erosion and sediment control plans, water quality BMP design and SWPPP reports that meet local, state and federal requirements.</p></div>
+    <div class="area"><div class="code">03 · TRANSPORTATION</div><h3>Highway &amp; roadway</h3><p>Highway and roadway plans in AutoCAD and MicroStation, design revisions for safety and efficiency, and field inspection with quantity measurement.</p></div>
+    <div class="area"><div class="code">04 · DELIVERY</div><h3>Specs, permitting &amp; constructability</h3><p>Specifications, RFQs and bid documents, constructability reviews, zoning research, due diligence and agency coordination for approvals.</p></div>
+  </div>
+</div></section>
+
+<section id="experience" class="gutter"><div class="container">
+  <div class="sec-head"><span class="sheet-no">C-200</span><h2>Experience</h2></div>
+  <div class="timeline">
+    <article class="job">
+      <div class="when"><strong>Staff Consultant</strong>May 2025 – Present<br>Columbus, OH</div>
+      <div>
+        <div class="org">Civil &amp; Environmental Consultants, Inc. (CEC)</div>
+        <ul>
+          <li>Prepare civil site designs for commercial, industrial and residential land development projects with multidisciplinary teams in AutoCAD Civil 3D.</li>
+          <li>Develop construction plans, engineering calculations, specifications and supporting documentation.</li>
+          <li>Prepare erosion and sediment control plans, water quality BMP designs, SWPPP reports and utility designs to meet local, state and federal regulations.</li>
+          <li>Conduct zoning research, site investigations, due diligence studies and feasibility evaluations.</li>
+          <li>Support permitting by coordinating with regulatory agencies and preparing technical documentation for approvals.</li>
+          <li>Prepare street, signage, utility and site development plans in coordination with clients, contractors, surveyors and public agencies.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="job">
+      <div class="when"><strong>Design Engineer Intern</strong>Jun 2024 – Aug 2024<br>Moon Township, PA</div>
+      <div>
+        <div class="org">Federal Express Corporation, Design Engineering Services</div>
+        <ul>
+          <li>Updated facility and material handling specifications for FedEx facilities across the U.S. and Canada to meet building codes, regulations and industry standards.</li>
+          <li>Analyzed plans and specifications to find constructability issues and confirm compliance.</li>
+          <li>Supported a national network project by identifying and resolving facility design issues with trailers, ULDs and caster decks.</li>
+          <li>Prepared RFQs and bidding documents for facility refresh projects.</li>
+          <li>Maintained as-built drawings in e-Builder and wrote a job aid that made drawings faster to find.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="job">
+      <div class="when"><strong>Trainee Engineer</strong>Jun 2022 – Sep 2022<br>Hyderabad, Sindh</div>
+      <div>
+        <div class="org">National Highway Authority</div>
+        <ul>
+          <li>Designed highway and roadway plans in AutoCAD and MicroStation to engineering and safety standards.</li>
+          <li>Revised and optimized designs for two highway projects, improving operational efficiency and safety by 15%.</li>
+          <li>Checked construction against plans, drawings, specifications and standards.</li>
+          <li>Conducted field inspections and quantity measurements, and took part in construction observation, record-keeping and materials testing with engineers and contractors.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<section id="projects" class="gutter"><div class="container">
+  <div class="sec-head"><span class="sheet-no">C-300</span><h2>Project experience</h2></div>
+  <div class="ptypes">
+    <div class="ptype"><span class="tag">Infrastructure · Public</span><h3>County watermain replacement</h3><p>Utility design and cost estimating for a county watermain replacement project.</p></div>
+    <div class="ptype"><span class="tag">Industrial</span><h3>Industrial and commercial sites</h3><p>Site grading, utilities, stormwater and erosion control design for industrial and commercial developments.</p></div>
+    <div class="ptype"><span class="tag">Residential</span><h3>Single-family subdivision</h3><p>Site layout, street, utility and stormwater design for a single-family residential development.</p></div>
+    <div class="ptype"><span class="tag">Land development</span><h3>Land development</h3><p>Zoning research, due diligence and permitting support from early feasibility through approvals.</p></div>
+    <div class="ptype"><span class="tag">Transportation</span><h3>Highway design &amp; inspection</h3><p>Design revisions and field inspection for two highway projects.</p></div>
+    <div class="ptype"><span class="tag">Facilities · Owner side</span><h3>National facility network</h3><p>Specifications, constructability review and bid documents for distribution facilities across North America.</p></div>
+  </div>
+</div></section>
+
+<section id="skills" class="gutter"><div class="container">
+  <div class="sec-head"><span class="sheet-no">C-400</span><h2>Software &amp; skills</h2></div>
+  <div class="tools">
+    <div><h3>Design &amp; CAD</h3><ul class="chips"><li>AutoCAD Civil 3D</li><li>AutoCAD</li><li>MicroStation</li><li>Revit</li><li>Navisworks</li></ul></div>
+    <div><h3>Review &amp; delivery</h3><ul class="chips"><li>Bluebeam</li><li>e-Builder</li><li>Salesforce</li></ul></div>
+    <div><h3>Office</h3><ul class="chips"><li>Excel</li><li>Word</li><li>PowerPoint</li><li>Adobe Photoshop</li></ul></div>
+    <div><h3>Engineering</h3><ul class="chips"><li>Grading &amp; utilities</li><li>E&amp;SC / SWPPP</li><li>Water quality BMPs</li><li>Quantities &amp; estimates</li><li>Specifications &amp; RFQs</li><li>Field inspection</li><li>Permitting</li></ul></div>
+  </div>
+</div></section>
+
+<section id="education" class="gutter"><div class="container">
+  <div class="sec-head"><span class="sheet-no">C-500</span><h2>Education &amp; credentials</h2></div>
+  <div class="edu">
+    <div class="card"><h3>Master of Science, Civil Engineering</h3><div class="meta">University of Dayton · Dayton, OH · Jan 2023 – May 2025</div><p>GPA 3.66 / 4.00</p></div>
+    <div class="card"><h3>Bachelor of Engineering, Civil Engineering</h3><div class="meta">Mehran University of Engineering &amp; Technology · Oct 2017 – Dec 2021</div></div>
+    <div class="card"><h3>Engineer Intern (E.I.)</h3><div class="meta">Passed the Fundamentals of Engineering exam</div><p>Working toward Professional Engineer (PE) licensure.</p></div>
+  </div>
+
+  <div class="edu sub">
+    <div class="card"><h3>Graduate Assistant</h3><div class="meta">University of Dayton, Office of the Registrar · Feb 2024 – May 2025</div>
+      <ul><li>Managed student and staff records and resolved record issues.</li><li>Worked with a diverse team to improve registration processes and refine policies.</li><li>Used Salesforce for daily reports and data accuracy.</li><li>Led training and mentored team members.</li></ul></div>
+    <div class="card"><h3>Research: reducing the impact of skilled worker shortages in construction</h3><div class="meta">Mehran University · 2021</div>
+      <ul><li>Studied how labor shortages drive cost overruns and schedule delays.</li><li>Designed a pilot study and surveys, and interviewed leading architects and engineers.</li><li>Findings pointed to prefabrication as an effective way to reduce the impact.</li></ul></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact gutter"><div class="container">
+  <div class="sec-head"><span class="sheet-no">C-600</span><h2>Let's talk</h2></div>
+  <p>I'm open to civil, site, stormwater and transportation engineering roles. The fastest way to reach me is email.</p>
+  <div class="addr">zaidalmani123@gmail.com</div>
+  <div class="contact-row">
+    <a class="btn primary" href="mailto:zaidalmani123@gmail.com">Email me</a>
+    <a class="btn" href="https://www.linkedin.com/in/zaid-almani-e-i-2465011b3/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="Zaid-Almani-Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+  </div>
+</div></section>
+</main>
+
+<footer class="titleblock gutter">
+  <div class="container">
+    <div><span>Project</span><b>Zaid Almani, E.I. · Portfolio</b></div>
+    <div><span>Location</span><b>Columbus, OH</b></div>
+    <div><span>Sheet</span><b>1 of 1</b></div>
+    <div><span>Rev</span><b id="year">2026</b></div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+// Contour map: draws topographic lines from a smooth height field
+(function(){
+  const c = document.getElementById('contours'); const ctx = c.getContext('2d');
+  function noise(x,y){ // sum of sines: smooth, deterministic terrain
+    return Math.sin(x*1.3+y*0.7)*0.6 + Math.sin(x*0.5-y*1.1+1.7)*0.8 + Math.sin(x*2.1+y*1.9+0.4)*0.25 + Math.cos(y*0.9-x*0.3)*0.5;
+  }
+  function draw(){
+    const r = c.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio||1, 2);
+    c.width = r.width*dpr; c.height = r.height*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    ctx.clearRect(0,0,r.width,r.height);
+    const css = getComputedStyle(document.documentElement);
+    const line = css.getPropertyValue('--contour').trim(), accent = css.getPropertyValue('--accent').trim();
+    const step = 10, cols = Math.ceil(r.width/step)+1, rows = Math.ceil(r.height/step)+1, s = 0.006;
+    const h = []; for(let j=0;j<rows;j++){ h[j]=[]; for(let i=0;i<cols;i++) h[j][i]=noise(i*step*s*1.2, j*step*s*1.6); }
+    const levels = 18;
+    for(let k=0;k<levels;k++){
+      const t = -2 + k*(4/levels);
+      ctx.strokeStyle = (k%5===0) ? accent : line; ctx.globalAlpha = (k%5===0) ? 0.35 : 0.9; ctx.lineWidth = (k%5===0) ? 1.4 : 1;
+      ctx.beginPath();
+      for(let j=0;j<rows-1;j++) for(let i=0;i<cols-1;i++){
+        const a=h[j][i], b=h[j][i+1], cc=h[j+1][i+1], d=h[j+1][i];
+        const x=i*step, y=j*step, pts=[];
+        const lerp=(p,q)=> (t-p)/(q-p);
+        if((a<t)!==(b<t)) pts.push([x+step*lerp(a,b), y]);
+        if((b<t)!==(cc<t)) pts.push([x+step, y+step*lerp(b,cc)]);
+        if((d<t)!==(cc<t)) pts.push([x+step*lerp(d,cc), y+step]);
+        if((a<t)!==(d<t)) pts.push([x, y+step*lerp(a,d)]);
+        if(pts.length>=2){ ctx.moveTo(pts[0][0],pts[0][1]); ctx.lineTo(pts[1][0],pts[1][1]); }
+        if(pts.length===4){ ctx.moveTo(pts[2][0],pts[2][1]); ctx.lineTo(pts[3][0],pts[3][1]); }
+      }
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+  }
+  draw(); let to; window.addEventListener('resize',()=>{clearTimeout(to); to=setTimeout(draw,150);});
+  if(window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',draw);
+})();
+</script>
+</body>
+</html>
